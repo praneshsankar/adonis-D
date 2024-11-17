@@ -154,7 +154,7 @@ body{
 
 .contact{
     text-align: center;
-    margin-bottom: 300px;
+    margin-bottom: 500px;
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
