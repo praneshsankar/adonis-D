@@ -1,0 +1,183 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes e{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.hero{
+    margin: auto;
+    text-align: center;
+    animation: e 1s ease-in-out;
+}
+
+.hero > img{
+    width: 20%;
+    border-radius: 50%;
+    min-width: 300px;
+    margin-top: 25vh;
+
+
+}
+
+.hero h1{
+    font-size: 45px;
+
+}
+
+.hero h2{
+    font-size: 70px;
+    font-style: italic;
+    margin-bottom: 100px;
+
+}
+
+.hero > a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    padding: 20px;
+    transition: ease-in-out 200ms;
+
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry -25% cover 30%;
+}
+
+
+.hero > a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: 31px;
+    padding: 20px
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 250px;
+    width: 15%;
+
+    margin: auto;
+
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.hero-img{
+    width: 70px;
+    margin-top: 30px;
+    transition: ease-in-out 200ms;
+}
+
+.hero-img:hover{
+    width: 72px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+.bio{
+    margin-top: 710px;
+    text-align: center;
+    margin-bottom: 400px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+.bio > h2{
+    font-size: 70px;
+}
+
+.bio-content{
+    display: flex;
+    width: 40%;
+
+    margin: auto;
+    min-width: 700px;
+}
+
+.bio-content > img{
+    min-width: 350px;
+    width: 50%;
+    margin-left: 30px;
+}
+
+.bio-content > p{
+    font-size: 30px;
+    margin: auto;
+}
+
+
+
+
+
+
+.contact{
+    text-align: center;
+    margin-bottom: 300px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.contact > h2{
+    font-size: 70px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 23%;
+    min-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+
+}
+
+.contact img{
+    width: 100px;
+}
+
+.contact p{
+    font-size: 30px;
+}
